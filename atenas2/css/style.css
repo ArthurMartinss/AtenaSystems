@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --text: #090c16;
+    --background: #e5eaf5;
+    --primary: #161a25;
+    --secondary: #c8d1e9;
+    --accent: #4c63ad;
+    --accent2: #1B59DE;
+}
+
+body{
+    height: 100%;
+    background-color: var(--background) !important;
+
+    overflow-x: hidden;
+}
+
+section{
+    padding: 0 9%;
+}
+
+
+/* .logo:hover{
+    transform: rotate(360deg);
+    transition: all ease-in-out 0.4s;
+} */
+
+/* Divisão */
+
+.divisor1{
+    border-top: 5px dashed var(--primary);
+    margin: 0 9%;
+}
+
+.d2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.divisor2{
+    border-top: 5px dashed var(--primary);
+    margin: 0 9%;
+}
+
+
+
+.divisor3{
+
+    border-top: 5px dashed var(--primary);
+    margin: 0 9%;
+}
+
+/* Termino da divisão */
+
+/* Navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    width: 100%;
+    background-color: #e5eaf52a;
+    position: fixed !important;
+    backdrop-filter:blur(5px);
+    border-bottom: 1px solid #161a25;
+    padding: 0 9% !important;
+}
+
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+   
+}
+
+.navbar-collapse a{
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.navbar-collapse a:hover{
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    color: var(--text);
+}
+
+.btn-contato{
+    background-color: var(--primary) !important;
+    color: var(--background) !important;
+    border-radius: 6px;
+    font-weight: 600 !important;
+}
+
+.btn-contato:hover{
+    box-shadow: 0px 20px 70px -10px var(--primary);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+}
+
+/* Termino navabar */
+
+/* Seção homepage */
+
+.home-page{
+    height: 95vh;
+    margin-bottom: 3rem;   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-page-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 600;
+
+}
+
+.home-page-content p:first-child{
+    margin-bottom: -0.6rem !important;
+}
+
+.home-page-content p:nth-child(2){
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.efeito-cor{
+    background: linear-gradient(120deg, var(--primary), var(--accent2) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-page a{
+    color: var(--background);
+    background-color: var(--primary);
+    text-decoration: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-size: 1.1em;
+
+}
+
+.home-page a:hover{
+    transform: translate(0, -3px);
+    transition: 0.2s;
+    box-shadow: 0px 20px 70px -10px var(--primary);
+}
+
+/* Termino da seção homepage */
+
+/* Seção Nossos serviços */
+
+.nossos-servicos h1:nth-child(1){
+    font-weight: 600;
+    font-size: 2.5em;
+    padding-top: 3rem;
+    text-align: left;
+}
+
+
+.nossos-servicos{
+    height: auto;
+}
+
+.nossos-servicos-content{
+    margin-bottom: 3rem;
+}
+
+.nossos-servicos-content h3{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.nossos-servicos-content p{
+    font-weight: 400;
+    font-size: 1.3em;
+    max-width: 650px;
+}
+.content-1{
+    margin-top: 3rem;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Termino seção nossos serviços */
+
+/* Seção Sobre nós */
+
+.sobre-nos{
+    height: auto;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.sobre-nos h1:first-child{
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    
+}
+
+.sobre-nos p{
+    font-weight: 500;
+    max-width: 1000px;
+    text-align: justify;
+}
+
+
+/* Termino seção Sobre nós */
+
+/* Seção Contato */
+
+.divisor4{
+    border-top: 5px dashed var(--primary);
+}
+
+
+.contato{
+    height: auto;
+    background-color: var(--secondary);
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 35rem !important;
+
+}
+
+.form-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+}
+
+.btn-form{
+    background-color: var(--primary) !important;
+    border: none !important;
+    margin-bottom: 4rem;
+}
+
+.btn-form:hover{
+    box-shadow: 0px 20px 70px -10px var(--primary);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+}
+
+.form-control{
+    font-weight: 700 !important;
+    font-size: 1em !important;
+    background-color: var(--background) !important;
+    border: 1px solid var(--primary) !important;
+
+}
+
+.form-control:focus{
+    box-shadow: 0px 0px 0px 0.25rem #1b59de54 !important;
+}
+
+.contato-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contato-redes{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-content a{
+
+    color: var(--text);
+    font-weight: 500;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.contato-content h3{
+    font-weight: 600;
+}
+
+.contato h1:first-child{
+    font-weight: 600;
+    font-size: 2.5em;
+    padding-top: 2rem;
+    text-align: left;
+}
+
+/* Termino seção Contato */
+
+/* Footer */
+
+footer{
+    background-color: #c8d1e9;
+    padding-top: 5rem;
+}
+
+footer p{
+    text-align: center; 
+    padding-bottom: 1rem; 
+    margin-bottom: -1rem;
+}
+
+
+/* Termino footer */
