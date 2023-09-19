@@ -16,17 +16,16 @@
     --accent2: #1B59DE;
 }
 
-body{
+body {
     height: 100%;
     background-color: var(--background) !important;
 
     overflow-x: hidden;
 }
 
-section{
+section {
     padding: 0 9%;
 }
-
 
 /* .logo:hover{
     transform: rotate(360deg);
@@ -35,80 +34,84 @@ section{
 
 /* Divisão */
 
-.divisor1{
+.divisor1 {
     height: 1px;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.000) 0%, rgba(22,26,37,1) 50%, rgba(0,0,0,0.000) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.000) 0%, rgba(22, 26, 37, 1) 50%, rgba(0, 0, 0, 0.000) 100%);
 
     margin: 0 9%;
 }
 
-.divisor2{
+.divisor2 {
     height: 100%;
     width: 1px;
-    background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rgba(0, 0, 0, 0.068) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22, 26, 37, 1) 50%, rgba(0, 0, 0, 0.068) 100%);
 }
 
 /* Termino da divisão */
 
 /* Navbar */
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between ;
+    justify-content: space-between;
     width: 100%;
-    background-color: #e5eaf52a;
+    background-color: rgba(0, 0, 0, 0.2);
     position: fixed !important;
-    backdrop-filter:blur(15px);
-    padding: 0 9% !important;
+    backdrop-filter: blur(5px);
+    padding: 0.5% 9% 0.5% 9% !important;
 }
 
 
-.navbar-collapse{
+.navbar-collapse {
     flex-grow: 0 !important;
-   
+
 }
 
-.navbar-collapse a{
+.navbar-collapse a {
     text-decoration: none;
     color: var(--text);
     font-weight: 600;
     cursor: pointer;
 }
 
-.navbar-collapse a:hover{
+.navbar-collapse a:hover {
     opacity: 0.6;
     transition: opacity 0.3s ease;
-    color: var(--text);
+    color: #1B59DE;
 }
 
-.btn-contato{
+.btn-contato {
     background-color: var(--primary) !important;
     color: var(--background) !important;
     border-radius: 6px;
     font-weight: 600 !important;
+    mix-blend-mode: normal;
+    
 }
 
-.btn-contato:hover{
-    box-shadow: 0px 20px 70px -10px #1B59DE;
+.btn-contato:hover {
     transform: translate(0, -3px);
-    transition: 0.2s;
+    transition: 0.3s;
+    background-color: var(--background) !important;
+    color: var(--primary) !important;
+    
 }
 
 /* Termino navabar */
 
 /* Seção homepage */
 
-.home-page{
+.home-page {
     height: 95vh;
-    margin-bottom: 3rem;   
+    margin-bottom: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.home-page-content{
+.home-page-content {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -118,23 +121,23 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rg
 
 }
 
-.home-page-content p:first-child{
+.home-page-content p:first-child {
     margin-bottom: -0.6rem !important;
 }
 
-.home-page-content p:nth-child(2){
+.home-page-content p:nth-child(2) {
     margin-bottom: 10px;
     margin-top: 10px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.efeito-cor{
+.efeito-cor {
     background: linear-gradient(120deg, var(--primary), var(--accent2) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.home-page a{
+.home-page a {
     color: var(--background) !important;
     background-color: var(--primary);
     text-decoration: none;
@@ -144,43 +147,49 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rg
 
 }
 
-.home-page a:hover{
+.home-page a:hover {
     transform: translate(0, -3px);
     transition: 0.2s;
     box-shadow: 0px 20px 70px -10px #1B59DE;
+    cursor: pointer;
 }
 
 /* Termino da seção homepage */
 
 /* Seção Nossos serviços */
 
-.nossos-servicos h1:nth-child(1){
+.nossos-servicos h1:nth-child(1) {
     font-weight: 600;
     font-size: 2.5em;
     padding-top: 8rem;
     text-align: left;
+
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #000 7%, #000, #1b59de00 7%) 1;
 }
 
 
-.nossos-servicos{
+.nossos-servicos {
     height: auto;
+    margin-bottom: 5rem;
 }
 
-.nossos-servicos-content{
+.nossos-servicos-content {
     margin-bottom: 3rem;
 }
 
-.nossos-servicos-content h3{
+.nossos-servicos-content h3 {
     font-weight: 600;
     font-size: 1.5em;
 }
 
-.nossos-servicos-content p{
+.nossos-servicos-content p {
     font-weight: 400;
     font-size: 1.3em;
     max-width: 650px;
 }
-.content-1{
+
+.content-1 {
     margin-top: 3rem;
     display: flex;
     width: 100%;
@@ -193,22 +202,25 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rg
 
 /* Seção Sobre nós */
 
-.sobre-nos{
+.sobre-nos {
     height: auto;
     margin-bottom: 5rem;
-    margin-top: 2rem;
+    margin-top: 8rem;
 }
 
-.sobre-nos h1:first-child{
+.sobre-nos h1:first-child {
     font-weight: 600;
     font-size: 2.5em;
     margin-top: 3rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     text-align: left;
-    
+
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #000 5%, #000, #1b59de00 5%) 1;
+
 }
 
-.sobre-nos p{
+.sobre-nos p {
     font-weight: 500;
     max-width: 1000px;
     text-align: justify;
@@ -220,17 +232,19 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rg
 
 /* Seção Contato */
 
-.divisor4{
-    border-top: 5px dashed var(--primary);
-}
-
-
-.contato{
+.contato {
     height: auto;
-    background-color: var(--secondary);
+    background-color: #e0e8ff;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, #00000000 10%, #1B59DE, #00000000 90%) 1;
 }
 
-.form{
+.contato h1:first-child{
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #000 5%, #000, #1b59de00 5%) 1;
+}
+
+.form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -238,7 +252,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rg
 
 }
 
-.form-top{
+.form-top {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -246,42 +260,52 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rg
     width: 100%;
 }
 
-.btn-form{
+.btn-form {
     background-color: var(--primary) !important;
-    border: none !important;
     margin-bottom: 4rem;
+    font-weight: bold;
+    border: 2px solid #fff !important;
+    width: 80% !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
-.btn-form:hover{
-    box-shadow: 0px 20px 70px -10px var(--primary);
-    transform: translate(0, -3px);
-    transition: 0.2s;
+.btn-form:hover {
+    background-color: #fff !important;
+    color: var(--primary) !important;
+    border: 2px solid #000 !important;
+    border-style: groove !important;
+    font-weight: bold;
 }
 
-.form-control{
+.form-control {
     font-weight: 700 !important;
     font-size: 1em !important;
     background-color: var(--background) !important;
-    border: 1px solid var(--primary) !important;
+    border: 2px solid var(--primary) !important;
 
 }
 
-.form-control:focus{
+.form-control:focus {
     box-shadow: 0px 0px 0px 0.25rem #1b59de54 !important;
 }
 
-.contato-content{
+.form-contato{
+    justify-content: center;
+}
+
+.contato-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.contato-redes{
+.contato-redes {
     display: flex;
     flex-direction: column;
 }
 
-.contato-content a{
+.contato-content a {
 
     color: var(--text);
     font-weight: 500;
@@ -289,11 +313,11 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rg
     text-align: left;
 }
 
-.contato-content h3{
+.contato-content h3 {
     font-weight: 600;
 }
 
-.contato h1:first-child{
+.contato h1:first-child {
     font-weight: 600;
     font-size: 2.5em;
     padding-top: 5rem;
@@ -302,7 +326,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rg
 
 /* Termino seção Contato */
 
-.divisor-fly{
+.divisor-fly {
 
 
     position: absolute;
@@ -327,28 +351,76 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rg
 
 /* Footer */
 
-footer{
-    background-color: #c8d1e9;
+footer {
+    background-color: #e0e8ff;
     padding-top: 5rem;
 }
 
-footer p{
-    text-align: center; 
-    padding-bottom: 1rem; 
+footer p {
+    text-align: center;
+    padding-bottom: 1rem;
     margin-bottom: -1rem;
 }
 
 
 /* Termino footer */
 
-@media (max-width: 1600px)  {
-    .nossos-servicos-content{
-    max-width: 500px;
+@media (max-width: 1600px) {
+    .nossos-servicos-content {
+        max-width: 500px;
     }
 }
 
-@media (max-width: 1280px)  {
+@media (max-width: 1280px) {
+    .nossos-servicos-content {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .nossos-servicos-content {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nossos-servicos-content {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 997px) {
+    .nossos-servicos-content {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 860px) {
+    .nossos-servicos-content {
+        max-width: 310px;
+    }
+}
+
+@media (max-width: 760px) {
     .nossos-servicos-content{
-    max-width: 400px;
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    .home-page{
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-page img{
+        height: 30vh;
+    }
+    .home-page-content{
+        justify-content: end;
+        margin-bottom: 5rem;
+    }
+    .home-page-content p:nth-child(2){
+        margin: 1.5rem 0rem 1.5rem 0rem;
     }
 }
