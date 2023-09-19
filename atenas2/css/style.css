@@ -94,8 +94,6 @@ section {
 .btn-contato:hover {
     transform: translate(0, -3px);
     transition: 0.3s;
-    background-color: var(--background) !important;
-    color: var(--primary) !important;
     
 }
 
