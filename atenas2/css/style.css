@@ -83,6 +83,7 @@ section{
     text-decoration: none;
     color: var(--text);
     font-weight: 600;
+    cursor: pointer;
 }
 
 .navbar-collapse a:hover{
@@ -143,7 +144,7 @@ section{
 }
 
 .home-page a{
-    color: var(--background);
+    color: var(--background) !important;
     background-color: var(--primary);
     text-decoration: none;
     padding: 0.6rem;

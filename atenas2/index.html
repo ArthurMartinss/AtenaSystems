@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a onclick="pageScrollatenasystems()" class="navbar-brand" href="#">
                     <img src="img/Cópia de Prancheta 33_1.png" alt="Atena Systems" style="max-width: 190px;"
                         class="logo">
                 </a>
@@ -31,16 +31,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">HOME</a>
+                            <a onclick="pageScrollatenasystems()" class="nav-link" aria-current="page" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">NOSSOS SERVIÇOS</a>
+                            <a class="nav-link" onclick="pageScrollnossosservicos()">NOSSOS SERVIÇOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SOBRE NÓS</a>
+                            <a class="nav-link" onclick="pageScrollsobrenos()">SOBRE NÓS</a>
                         </li>
                         <li class="nav-item ">
-                            <button class="nav-link btn-contato" id="" href="#">CONTATO</button>
+                            <button class="nav-link btn-contato" id="" onclick="pageScrollcontato()">CONTATO</button>
                         </li>
                     </ul>
                 </div>
@@ -52,14 +52,14 @@
             <p class="" style="font-size: 1.2rem;">DESENVOLVA <span class="efeito-cor">SEU SOFTWARE</span></p>
             <p style="font-size:clamp(1.5rem, 6vw, 2.5rem); max-width: 900px;">soluções e desenvolvimento de software
                 para sua empresa</p>
-            <a href="#">FALE CONOSCO</a>
+            <a onclick="pageScrollcontato()">FALE CONOSCO</a>
         </div>
         <div>
             <img src="img/Cópia de Prancheta 1_3.png" alt="" style="max-width:200px;" class="logo">
         </div>
     </section>
 
-    <div class="d1">
+    <div class="d1" id="nossos-servicos">
         <div class="divisor1"></div>
         <div class="divisor1"></div>
     </div>
@@ -67,13 +67,13 @@
         <div class="divisor2"></div>
         <div class="divisor2"></div>
     </div>
-    <div class="d3">
+    <div class="d3" >
         <div class="divisor3"></div>
         <div class="divisor3"></div>
     </div>
 
-    <section class="nossos-servicos">
-        <h1>NOSSOS SERVIÇOS</h1>
+    <section class="nossos-servicos" >
+        <h1 >NOSSOS SERVIÇOS</h1>
 
         <div class="content-1">
 
@@ -100,7 +100,7 @@
         </div>
     </section>
     <section class="sobre-nos">
-        <h1>SOBRE NÓS</h1>
+        <h1 id="sobre-nos">SOBRE NÓS</h1>
         <div class="sobre-nos-content">
             <p>A Atena Systems é uma software house em Campinas - SP, fundada por sete talentosos programadores do
                 renomado Colégio Técnico "Bento Quirino".
@@ -112,7 +112,58 @@
                 Contamos serviços de alta qualidade para impulsionar o crescimento das empresas. Estamos ansiosos para
                 colaborar com você e construir uma parceria de sucesso!</p>
     </section>
-    </div>
+    
+    <!-- <section id="mapa">
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0915763313055!2d-47.0622623596467!3d-22.909992879339207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8ca99d7d933%3A0x6532f8818a526bc7!2sR.%20Jos%C3%A9%20de%20Alencar%2C%20442%20-%20Centro%2C%20Campinas%20-%20SP%2C%2013013-040!5e0!3m2!1sen!2sbr!4v1685287165694!5m2!1sen!2sbr"
+            width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="texto-sobreposto">
+            <h2><i class="fa-solid fa-location-dot"></i> Localização</h2>
+            <P>R. José de alencar, 442 - Centro, Campinas - SP, Brasil</P>
+          </div>
+          <style>
+            .mapa {
+              position: relative;
+              width: 100%;
+              height: 450px;
+            }
+  
+            .mapa iframe {
+              width: 100%;
+              height: 100%;
+              border: 1px solid #797979;
+              box-shadow: 0 0 3px #999;
+  
+            }
+  
+            .texto-sobreposto {
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              background-color: #fff;
+              padding: 20px;
+              padding-bottom: 2.15em;
+              border-radius: 6px;
+              font-size: 1.3em;
+              line-height: 1em;
+              height: 5em;
+              box-shadow: 0 0 3px #999;
+            }
+  
+            .texto-sobreposto p {
+              color: #868686;
+            }
+  
+            .texto-sobreposto h2 {
+              padding: 10px 5px 10px 0px;
+              color: #27272a;
+            }
+          </style>
+        </div>
+      </section> -->
+    
     <!-- <div class="d4">
         <div class="divisor4"></div>
         <div class="divisor4"></div>
@@ -133,7 +184,7 @@
 </div>
 
     <section class="contato">
-        <h1>CONTATO</h1>
+        <h1 id="contato">CONTATO</h1>
 
         <div class="contato-content">
             <div class="col-lg-6 mt-4">
