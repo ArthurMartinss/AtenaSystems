@@ -36,26 +36,18 @@ section{
 /* Divisão */
 
 .divisor1{
-    border-top: 5px dashed var(--primary);
-    margin: 0 9%;
-}
+    height: 1px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.000) 0%, rgba(22,26,37,1) 50%, rgba(0,0,0,0.000) 100%);
 
-.d2{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0 9%;
 }
 
 .divisor2{
-    border-top: 5px dashed var(--primary);
-    margin: 0 9%;
-}
-
-
-
-.divisor3{
-
-    border-top: 5px dashed var(--primary);
-    margin: 0 9%;
+    height: 100%;
+    width: 1px;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.068), rgba(22,26,37,1) 50%, rgba(0, 0, 0, 0.068) 100%);
 }
 
 /* Termino da divisão */
@@ -68,8 +60,7 @@ section{
     width: 100%;
     background-color: #e5eaf52a;
     position: fixed !important;
-    backdrop-filter:blur(5px);
-    border-bottom: 1px solid #161a25;
+    backdrop-filter:blur(15px);
     padding: 0 9% !important;
 }
 
@@ -166,7 +157,7 @@ section{
 .nossos-servicos h1:nth-child(1){
     font-weight: 600;
     font-size: 2.5em;
-    padding-top: 3rem;
+    padding-top: 8rem;
     text-align: left;
 }
 
@@ -349,3 +340,15 @@ footer p{
 
 
 /* Termino footer */
+
+@media (max-width: 1600px)  {
+    .nossos-servicos-content{
+    max-width: 500px;
+    }
+}
+
+@media (max-width: 1280px)  {
+    .nossos-servicos-content{
+    max-width: 400px;
+    }
+}
