@@ -57,7 +57,7 @@ section {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0);
     position: fixed !important;
     backdrop-filter: blur(5px);
     padding: 0.5% 9% 0.5% 9% !important;
