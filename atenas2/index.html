@@ -29,9 +29,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav justify-content-end">
+                    <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a onclick="pageScrollatenasystems()" class="nav-link" aria-current="page" href="#">HOME</a>
+                            <a onclick="pageScrollatenasystems()" class="nav-link" aria-current="page">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" onclick="pageScrollnossosservicos()">NOSSOS SERVIÇOS</a>
@@ -39,11 +39,12 @@
                         <li class="nav-item">
                             <a class="nav-link" onclick="pageScrollsobrenos()">SOBRE NÓS</a>
                         </li>
-                        <li class="nav-item ">
+                        <div class="nav-item ">
                             <button class="nav-link btn-contato" id="" onclick="pageScrollcontato()">CONTATO</button>
-                        </li>
+                        </div>
                     </ul>
                 </div>
+                
             </div>
         </nav>
     </header>
@@ -56,20 +57,19 @@
         </div>
         <div>
             <img src="img/Cópia de Prancheta 1_3.png" alt="" style="max-width:200px;" class="logo">
-        </div>
+        </div >
     </section>
-    <div class="d1" id="nossos-servicos">
+    <div id="nossos-servicos" class="d1">
         <div class="divisor1"></div>
     </div>
 
 
     <section class="nossos-servicos" >
-        <h1 >NOSSOS SERVIÇOS</h1>
+        <h1>NOSSOS SERVIÇOS</h1>
 
         <div class="content-1">
 
             <div class="nossos-servicos-content">
-                <img src="img/option.png" alt="" style="max-width: 60px; margin-bottom: 15px;">
                 <h3> <span style="color: #1B59DE;">1.</span> Desenvolvimento de aplicativos</h3>
                 <p>Criação de aplicativos para dispositivos móveis, computadores e tablets, usando as mais recentes
                     tecnologias para melhorar a experiência do usuário.</p>
@@ -101,9 +101,9 @@
     <div class="divisor1"></div>
 
     <section class="sobre-nos">
-        <h1 id="sobre-nos">SOBRE NÓS</h1>
+        <h1 >SOBRE NÓS</h1>
         <div class="sobre-nos-content">
-            <p>A Atena Systems é uma software house em Campinas - SP, fundada por sete talentosos programadores do
+            <p id="sobre-nos">A Atena Systems é uma software house em Campinas - SP, fundada por sete talentosos programadores do
                 renomado Colégio Técnico "Bento Quirino".
                 Oferecemos soluções personalizadas para o desenvolvimento de sites e sistemas, simplificando e
                 otimizando as operações das empresas.
@@ -210,14 +210,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
-    <script>
-        const cursor = document.querySelector('.cursor');
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.pageX + 'px';
-            cursor.style.right = e.pageY + 'px';
-        })
-    </script>
 </body>
 
 </html>
