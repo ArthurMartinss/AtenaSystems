@@ -438,6 +438,11 @@ footer p {
     .home-page img{
         height: 30vh;
     }
+
+    .home-page{
+        height: 98vh;
+    }
+
     .home-page-content{
         justify-content: end;
         margin-bottom: 1rem;
@@ -449,12 +454,32 @@ footer p {
     }
 }
 
+@media (max-width: 667px){
+    .home-page-content{
+        margin-top: 10vh;
+    }
+    .home-page{
+        height: 101vh;
+    }
+}
+
+
+@media (max-width: 677px){
+    .home-page{
+        height: 102vh;
+    }
+}
+
 @media (max-width: 400px){
     .container-fluid{
         display: flex;
         flex-direction: column;
         gap: 1rem;
         padding-bottom: 1rem;
+    }
+    
+    .home-page-content{
+        margin-top: 26vh;
     }
 }
 
@@ -467,3 +492,16 @@ footer p {
         height: 23vh;
     }
 }
+
+@media (max-height: 780px){
+    .home-page-content{
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 400px) and (max-height: 780px){
+    .home-page-content{
+        margin-top: 30vh;
+    }
+}
+
