@@ -127,7 +127,7 @@
         <h1 id="contato">CONTATO</h1>
         <div class="contato-content">
             
-        <?php
+        <!-- <?php
             if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $destinatario = "atenasystemtcc@gmail.com";
                 $assunto = isset($_POST["assunto"]) ? $_POST["assunto"] : "";
@@ -145,11 +145,12 @@
 
                 $emailEnviado = mail($destinatario, $assunto, $mensagem, $headers, "-f $email");
             }
-        ?>
+        ?> -->
 
         <div class="form-contato">
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-
+            <form action="#" method="post">
+            <!-- <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"> -->
+            
                         <input type="text" id="email" name="email" placeholder="Seu email" required>
                         <input type="assunto" id="assunto" name="assunto" placeholder="Seu nome" required>
 
@@ -184,6 +185,7 @@
             errorMessage.style.display = 'none';
         }
     }, 4000); 
+    
 </script>
 
             <div class="contato-redes">
