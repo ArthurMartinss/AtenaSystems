@@ -158,16 +158,18 @@
                     <button type="submit" class="btn-form">Enviar</button>
             </form>
         </div>
+<!-- 
+    <?php 
+        if (isset($emailEnviado)) {
+            if ($emailEnviado) {
+                echo "<p id='success-message' class='success-message'>E-mail enviado com sucesso.</p>";
+            } else {
+                echo "<p id='error-message'>Ocorreu um erro ao enviar o e-mail.</p>";
+            }
+        }
+    ?>  -->
 
-        <?php
-if (isset($emailEnviado)) {
-    if ($emailEnviado) {
-        echo "<p id='success-message' class='success-message'>E-mail enviado com sucesso.</p>";
-    } else {
-        echo "<p id='error-message'>Ocorreu um erro ao enviar o e-mail.</p>";
-    }
-}
-?>
+
 
 <script>
     
